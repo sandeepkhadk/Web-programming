@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<!-- ------header section------ -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img alt='Sandeep' src="images/logo.png" class="logo"> 
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+            </ul>
+            <i class="fa-solid fa-list" onclick="openmenu()"></i>
+        </nav>   
+        <div class="header_text">
+            <p>Hi, It's me <span class="name">Sandeep.</span> </p>
+             <p>I'm <span class="typing"></span></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.typing', {
+            strings: ["a Web Developer.", "a learner.", "an aspiring Programmer."],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+</div>
+<!-- ------about section------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img alt="pp-size image" src="images/bro.png" >
+            </div>
+            <div class="about-col-2">
+                <h2 class="sub-title">About Me</h2>
+                <p class="about-me">Hello! I'm Sandeep Khadka, a passionate web developer dedicated to building dynamic and user-friendly websites.
+                With a solid foundation in HTML, CSS, and JavaScript, I thrive on turning creative ideas into functional digital
+                experiences. Outside of coding, I enjoy exploring emerging technologies and capturing moments through photography.
+                Let's connect and create something amazing together!</p>
+                <div class="tab-sesion">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Responsive web app development</li>
+                        <li><span>Version Control</span><br>Git/Git hub</li>
+                        <li><span>Data Science</span><br>Basic knowledge of Python and SQL</li>
+                        <li><span>Problem-Solving Skills</span><br>Logical thinking and debugging</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>Internship at Tech Solutions</span><br>Assisted in developing and maintaining company website</li>
+                        <li><span>Freelance Web Developer</span><br>Created websites for local businesses and personal projects</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>Bachelor's in Computer Science</span><br>XYZ University, 2020 - 2024</li>
+                        <li><span>+2</span><br>ABC High School, 2018 - 2020</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- --------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Development</h2>
+                <p>Building responsive and dynamic websites using HTML, CSS, and JavaScript.</p>
+                <a href="#">learn more</a>
+            </div>   
+            <div>
+                <i class="fa-solid fa-user-secret"></i>
+                <h2>Data Science</h2>
+                <p>Analyzing data and creating visualizations using Python and SQL.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-bug-slash"></i>
+                <h2>Problem-Solving</h2>
+                <p>Applying logical thinking to debug and solve real-life challenges.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------Contact Section------ --> 
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> 
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+9779812345678" class="contact-link">
+                        +977-9812345678
+                    </a>
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:example@gmail.com" class="contact-link">
+                        example@gmail.com
+                    </a>
+                </p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form class="contact-form" action="">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>CopyRight © Sandeep. Made with <i class="fa-solid fa-heart"></i> by Sandeep</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tab_name){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tab_name).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
